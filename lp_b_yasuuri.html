@@ -16,7 +16,7 @@
   .wrap{max-width:720px;margin:0 auto;padding:0 24px;}
   .seal{display:inline-flex;align-items:center;justify-content:center;width:64px;height:64px;border:3px solid var(--shu);color:var(--shu);font-family:'Zen Old Mincho',serif;font-weight:900;font-size:34px;border-radius:8px;transform:rotate(-4deg);background:rgba(199,62,46,.04);}
   .seal.small{width:40px;height:40px;font-size:20px;border-width:2px;}
-  .hero{background:var(--ink);color:#fff;padding:72px 0 64px;}
+  .hero{position:relative;background:linear-gradient(rgba(26,34,56,.84),rgba(26,34,56,.92)),url('https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=1600&q=70&auto=format&fit=crop') center/cover no-repeat var(--ink);color:#fff;padding:72px 0 64px;}
   .hero .eyebrow{color:#aeb8d0;font-size:13px;letter-spacing:.18em;margin-bottom:28px;}
   .hero h1{font-family:'Zen Old Mincho',serif;font-weight:900;font-size:clamp(32px,7vw,50px);line-height:1.5;letter-spacing:.02em;}
   .hero h1 .hit{border-bottom:4px solid var(--shu);padding-bottom:2px;}
@@ -48,6 +48,9 @@
   .pillar h3{font-family:'Zen Old Mincho',serif;font-size:19px;font-weight:700;margin-bottom:10px;display:flex;align-items:center;gap:10px;}
   .pillar h3 .tag{font-family:'Noto Sans JP',sans-serif;font-size:11px;font-weight:700;color:#fff;background:var(--ink);border-radius:4px;padding:3px 8px;letter-spacing:.08em;}
   .pillar p{font-size:14.5px;color:var(--ink-soft);}
+  .pillar-img{width:100%;height:150px;object-fit:cover;border-radius:8px;margin-bottom:14px;display:block;}
+  .photo-band{width:100%;height:220px;object-fit:cover;border-radius:12px;margin:32px 0 0;display:block;}
+  .case-img{width:100%;height:170px;object-fit:cover;border-radius:8px;margin-bottom:14px;display:block;}
   .case{background:#fff;border-left:5px solid var(--shu);padding:26px 26px 24px;border-radius:0 10px 10px 0;box-shadow:0 1px 4px rgba(26,34,56,.06);}
   .case + .case{margin-top:22px;}
   .case .who{font-size:13px;color:var(--ink-soft);letter-spacing:.06em;margin-bottom:8px;}
@@ -98,6 +101,7 @@
       <li>疲れて単価を上げたくなる。でも「高くしたら誰も来ない」が怖い</li>
       <li><strong>実は、価格は問題ではなかった。</strong>決まらなかった本当の原因は、<span class="em">売り方の設計</span>にあった</li>
     </ol>
+    <img class="photo-band" src="https://images.unsplash.com/photo-1556761175-b413da4baf72?w=1400&q=70&auto=format&fit=crop" alt="1対1の商談風景" onerror="this.style.display='none'">
     <p style="margin-top:28px;">証拠に、同じ商品でも「売り方の設計」を変えただけで決まり始めた実例が、下にあります。</p>
   </div>
 </section>
@@ -113,11 +117,13 @@
   <div class="wrap">
     <div class="sec-head"><span class="seal small serif">証</span><h2>「値付けごと」立て直した実例</h2></div>
     <div class="case">
+      <img class="case-img" src="https://images.unsplash.com/photo-1560066984-138dadb4c035?w=800&q=70&auto=format&fit=crop" alt="サロンでの施術風景" onerror="this.style.display='none'">
       <p class="who">美容系サロン講師（講座事業・30代）</p>
       <p class="what serif">60万円で止まっていた講座を、二段構えの値付けに再設計。面談当日に決まる状態へ。</p>
       <p class="how">入口を19.8万円のフロント講座に組み直し、信頼を得てから上位講座へ案内する設計に変更。「安くした」のではなく「決まる順番」に並べ替えたことで、成約が動き始めました。</p>
     </div>
     <div class="case">
+      <img class="case-img" src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&q=70&auto=format&fit=crop" alt="専門職の指導風景" onerror="this.style.display='none'">
       <p class="who">理学療法士・講座販売</p>
       <p class="what serif">専門職向けの講座を、40万円のまま販売。値下げせずに決めています。</p>
       <p class="how">ターゲットの絞り込みと面談の型を整備。「専門性があるのに安売りする」典型パターンから抜け、高単価帯での成約を続けています。</p>
@@ -129,9 +135,9 @@
   <div class="wrap">
     <div class="sec-head"><span class="seal small serif">型</span><h2>19ステップを体に入れる、3段構え</h2></div>
     <div class="pillars">
-      <div class="pillar"><h3><span class="tag">第1段</span>1泊2日合宿</h3><p>成約までの19ステップを2日間で全編走り切ります。価格提示とクロージングは、流れの中でしか練習できません。だから合宿で一気通貫。</p></div>
-      <div class="pillar"><h3><span class="tag">第2段</span>月次実践会</h3><p>月1回のオンライン実践会で、あなたの実際の商談・実際の値付けを題材に添削。「この価格で、この出し方でいいか」を直接確認できます。</p></div>
-      <div class="pillar"><h3><span class="tag">第3段</span>反復教材</h3><p>全ステップの動画・音声教材をいつでも見返せます。価格提示の直前に該当ステップを復習してから面談に入る、が勝ちパターンです。</p></div>
+      <div class="pillar"><img class="pillar-img" src="https://images.unsplash.com/photo-1531482615713-2afd69097998?w=800&q=70&auto=format&fit=crop" alt="合宿形式の研修風景" onerror="this.style.display='none'"><h3><span class="tag">第1段</span>1泊2日合宿</h3><p>成約までの19ステップを2日間で全編走り切ります。価格提示とクロージングは、流れの中でしか練習できません。だから合宿で一気通貫。</p></div>
+      <div class="pillar"><img class="pillar-img" src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=800&q=70&auto=format&fit=crop" alt="オンライン実践会" onerror="this.style.display='none'"><h3><span class="tag">第2段</span>月次実践会</h3><p>月1回のオンライン実践会で、あなたの実際の商談・実際の値付けを題材に添削。「この価格で、この出し方でいいか」を直接確認できます。</p></div>
+      <div class="pillar"><img class="pillar-img" src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&q=70&auto=format&fit=crop" alt="教材での反復学習" onerror="this.style.display='none'"><h3><span class="tag">第3段</span>反復教材</h3><p>全ステップの動画・音声教材をいつでも見返せます。価格提示の直前に該当ステップを復習してから面談に入る、が勝ちパターンです。</p></div>
     </div>
   </div>
 </section>
@@ -165,6 +171,7 @@
 </section>
 <section id="apply">
   <div class="wrap" style="text-align:center;">
+    <img class="photo-band" src="https://images.unsplash.com/photo-1521791136064-7986c2920216?w=1400&q=70&auto=format&fit=crop" alt="成約の握手" onerror="this.style.display='none'" style="margin-bottom:36px;">
     <span class="seal serif" style="margin-bottom:20px;">決</span>
     <h2 class="serif" style="font-size:clamp(22px,5vw,30px);font-weight:900;line-height:1.7;margin-top:16px;">次の商品から、<br>あなたの値段で売る。</h2>
     <p style="margin-top:18px;color:var(--ink-soft);">まずは30分の無料個別相談で、「本来の値付け」と「決まらない箇所」の見立てから。</p>
